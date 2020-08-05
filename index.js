@@ -81,8 +81,8 @@ const Compare = (leftMovie, rightMovie) => {
     leftSideStats.forEach((leftStat, index) => {
         const rightStat = rightSideStats[index];
 
-        const leftSideValue = parseInt(leftStat.dataset.value);
-        const rightSideValue = parseInt(rightStat.dataset.value);
+        const leftSideValue = parseFloat(leftStat.dataset.value);
+        const rightSideValue = parseFloat(rightStat.dataset.value);
 
 
         if(rightSideValue > leftSideValue){
